@@ -4,8 +4,8 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 
-desired_width = 640
-desired_height = 480
+desired_width = int(input("Enter the desired width of the frame: "))
+desired_height = int(input("Enter the desired height of the frame: "))
 cap.set(3, desired_width)  # Set the width of the frame
 cap.set(4, desired_height)  # Set the height of the frame
 
