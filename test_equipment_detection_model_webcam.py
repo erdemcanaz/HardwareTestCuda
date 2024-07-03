@@ -22,7 +22,7 @@ classNames = ["white_net", "blue_net", "safety_goggles", "blue_surgical_mask", "
 
 while True:
     success, img = cap.read()
-    results = model(img, stream=True)
+    results = model(img, show=False, save=False, project=None, conf=0.5,stream = True)
 
     # coordinates
     for r in results:
