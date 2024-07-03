@@ -15,8 +15,8 @@ results = model(source=0, vid_stride=1, show=True, save=False, project=None, con
 desired_width = int(input("Enter the desired width of the frame: "))
 desired_height = int(input("Enter the desired height of the frame: "))
 cap = cv2.VideoCapture(0)
-cap.set(3, 640)
-cap.set(4, 480)
+cap.set(3, desired_width)
+cap.set(4, desired_height)
 
 classNames = ["white_net", "blue_net", "safety_goggles", "blue_surgical_mask", "white_surgical_mask"]
 
